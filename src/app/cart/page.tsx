@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { ArrowLeft, Check, Mail, ShoppingCart } from "lucide-react";
+import { ArrowLeft, Check, MessageCircle, ShoppingCart } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { SiteBackground } from "@/components/layout/site-background";
@@ -27,8 +27,7 @@ function CartContent() {
   const planPrice = searchParams.get("price") || "0";
   const planDescription = searchParams.get("description") || "No description available";
   const planFeatures = parseFeatures(searchParams.get("features"));
-  const checkoutSubject = `Bilancy inquiry: ${planName} package`;
-  const checkoutBody = [
+  const checkoutMessage = [
     `Hi Bilancy team,`,
     "",
     `I'm interested in the ${planName} package ($${planPrice}).`,
@@ -41,7 +40,7 @@ function CartContent() {
   ]
     .filter(Boolean)
     .join("\n");
-  const checkoutHref = `mailto:${brand.email}?subject=${encodeURIComponent(checkoutSubject)}&body=${encodeURIComponent(checkoutBody)}`;
+  const checkoutHref = `https://wa.me/${brand.phoneHref.replace("tel:+", "")}?text=${encodeURIComponent(checkoutMessage)}`;
 
   return (
     <div className="relative flex min-h-screen items-center justify-center px-4 py-16 text-white">
@@ -81,8 +80,8 @@ function CartContent() {
 
         <div className="mt-6 space-y-3">
           <Button asChild className="w-full rounded-full bg-[#24D17E] py-6 font-black text-[#111315] hover:bg-[#20bd72]">
-            <Link href={checkoutHref}>
-              <Mail className="h-4 w-4" />
+            <Link href={checkoutHref} target="_blank" rel="noreferrer">
+              <MessageCircle className="h-4 w-4" />
               Proceed to Checkout
             </Link>
           </Button>

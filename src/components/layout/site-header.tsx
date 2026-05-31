@@ -40,7 +40,7 @@ export function SiteHeader() {
         ].join(" ")}
       >
         <Link href="/" className="group flex items-center gap-3" onClick={close}>
-          <span className="relative h-20 w-96 overflow-hidden rounded-lg p-1.5 sm:w-48">
+          <span className="relative h-12 w-32 overflow-hidden rounded-lg p-1.5 sm:w-48">
             <Image src={brand.logo} alt="Bilancy Logo" fill className="object-contain p-1.5" sizes="(max-width: 640px) 160px, 192px" priority />
           </span>
         </Link>
