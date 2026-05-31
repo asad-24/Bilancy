@@ -586,7 +586,7 @@ export function Footer() {
         <div className="grid gap-10 border-b border-white/10 pb-10 md:grid-cols-[1.25fr_0.75fr_0.75fr_0.75fr]">
           <div>
             <div className="flex items-center gap-3">
-              <span className="relative h-16 w-52 overflow-hidden rounded-lg bg-white/95 p-2">
+              <span className="relative h-16 w-52 overflow-hidden rounded-lg p-2">
                 <Image src={brand.logo} alt="Bilancy Logo" fill className="object-contain p-2" sizes="208px" />
               </span>
             </div>
