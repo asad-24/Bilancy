@@ -27,12 +27,18 @@ export const brand = {
 };
 
 export const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Our Work", href: "#work" },
-  { label: "Case Studies", href: "#case-studies" },
-  { label: "Process", href: "#process" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Services", href: "/#services" },
+  { label: "Our Work", href: "/#work" },
+  { label: "Case Studies", href: "/#case-studies" },
+  { label: "Process", href: "/#process" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "FAQ", href: "/faq" },
+];
+
+export const socialLinks = [
+  { label: "WhatsApp", href: brand.whatsappHref },
+  { label: "Portfolio", href: brand.workUrl },
+  { label: "Email", href: brand.emailHref },
 ];
 
 export const stats = [

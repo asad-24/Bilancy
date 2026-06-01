@@ -1,9 +1,9 @@
 import { SiteHeader } from "@/components/layout/site-header";
+import { SiteFooter } from "@/components/layout/site-footer";
 import { StickyCTA } from "@/components/layout/sticky-cta";
 import {
   CaseStudies,
   FAQAccordion,
-  Footer,
   Hero,
   HowItWorks,
   Pricing,
@@ -27,7 +27,7 @@ export default function Home() {
         <Pricing />
         <Testimonials />
         <FAQAccordion />
-        <Footer />
+        <SiteFooter />
       </main>
       <StickyCTA />
     </>
