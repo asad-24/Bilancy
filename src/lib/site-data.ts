@@ -279,7 +279,7 @@ export const plans = [
     originalPrice: 60,
     discountedPrice: 50,
     features: [
-      "10-15 minute professional video production",
+      "7 - 10 minute professional video production",
       "Custom-written script tailored to your content",
       "Professional voiceover narration",
       "High-quality custom thumbnail design",
@@ -294,7 +294,7 @@ export const plans = [
     popular: true,
     features: [
       "10 high-quality videos",
-      "Duration 10-15 minutes",
+      "Duration 7-10 minutes",
       "Premium scripts",
       "Multiple voice over choices",
       "Advanced video editing",
@@ -311,7 +311,7 @@ export const plans = [
     recommended: true,
     features: [
       "15 high-quality videos",
-      "Duration 10-15 minutes",
+      "Duration 7-10 minutes",
       "Premium scripts",
       "Multiple voice over choices",
       "Advanced video editing",
