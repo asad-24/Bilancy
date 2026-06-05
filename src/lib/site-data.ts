@@ -268,7 +268,7 @@ export const plans = [
     features: [
       "Profitable Niche Research",
       "Channel Setup (Logo, Banner)",
-      "1 Best Quality Video (10-15 Mins Duration)",
+      "1 Best Quality Video (7-10 Mins Duration)",
       "High-quality thumbnail",
       "Cost: $99 (Limited Time - More Than 10% Discount Included)",
     ],
